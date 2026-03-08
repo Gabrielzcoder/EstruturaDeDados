@@ -25,13 +25,13 @@ public class PilhaDinamica {
         if (!estaVazio()) {
             No aux = inicio;
             if(inicio.getProx() == null) {
-                System.out.printf("Elemento %s removido com sucesso", inicio.getConteudo());
+                System.out.printf("Elemento %s removido com sucesso\n", inicio.getConteudo());
                 inicio.setConteudo(null);
             }else{
                 while(aux.getProx().getProx() != null) {
                     aux = aux.getProx();
                 }
-                System.out.printf("Elemento %s removido com sucesso", aux.getProx().getConteudo());
+                System.out.printf("Elemento %s removido com sucesso\n", aux.getProx().getConteudo());
                 aux.setProx(null);
             }
         }else {
